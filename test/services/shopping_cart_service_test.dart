@@ -1,6 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:hamason/app/app.locator.dart';
 import 'package:hamason/models/product.dart';
+import 'package:mockito/mockito.dart';
 import '../helpers/test_helpers.dart';
 import '../helpers/test_helpers.mocks.dart';
 
