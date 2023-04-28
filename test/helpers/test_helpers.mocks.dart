@@ -823,6 +823,15 @@ class MockShoppingCartService extends _i1.Mock
         returnValueForMissingStub: null,
       );
   @override
+  int suma() => (super.noSuchMethod(
+        Invocation.method(
+          #suma,
+          [],
+        ),
+        returnValue: 0,
+        returnValueForMissingStub: 0,
+      ) as int);
+  @override
   void removeProductFromShoppingCart(_i10.ShoppingCartProduct? product) =>
       super.noSuchMethod(
         Invocation.method(

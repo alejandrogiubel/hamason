@@ -24,6 +24,10 @@ class ShoppingCartService {
     }
   }
 
+  int suma() {
+    return 2;
+  }
+
   void removeProductFromShoppingCart(ShoppingCartProduct product) {
     final existingProduct = _shoppingCartProducts.firstWhere(
       (element) => element.product == product.product,
