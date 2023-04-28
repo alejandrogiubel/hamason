@@ -77,4 +77,10 @@ class HomeView extends StackedView<HomeViewModel> with $HomeView {
     viewModel.fetchProductsCategories();
     syncFormWithViewModel(viewModel);
   }
+
+  @override
+  void onDispose(HomeViewModel viewModel) {
+    super.onDispose(viewModel);
+    disposeForm();
+  }
 }

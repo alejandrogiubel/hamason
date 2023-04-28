@@ -92,4 +92,5 @@ class HomeViewModel extends FormViewModel {
         .navigateToProductDetailsView(product: product)
         .then((value) => rebuildUi());
   }
+
 }
