@@ -8,6 +8,7 @@ import '../helpers/test_helpers.mocks.dart';
 void main() {
   group('ProductsServiceTest -', () {
     setUp(() => registerServices());
+    tearDown(() => locator.reset());
     final productsService = MockProductsService();
     test('Get products', () async {
       final products = await productsService.getProducts(limit: 20, skip: 0);
@@ -23,6 +24,5 @@ void main() {
           await productsService.productsCategories(limit: 20, skip: 0);
       expect(products, isA<List<String>>());
     });
-    tearDown(() => locator.reset());
   });
 }
